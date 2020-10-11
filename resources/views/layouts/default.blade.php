@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>@yield('title', 'weibo App')</title>
-  <link rel="stylesheet" href="/css/app.css">
+<link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
   <body>
 
