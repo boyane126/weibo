@@ -12,13 +12,22 @@
 
     <form method="POST" action="{{ route('login') }}">
       {{ csrf_field() }}
+
       <div class="form-group">
         <label for="email">邮箱：</label>
       <input type="text" name="email" class="form-control" value="{{ old('email') }}">
       </div>
+
       <div class="form-group">
         <label for="password">密码：</label>
       <input type="text" name="password" class="form-control" value="{{ old('password') }}">
+      </div>
+
+      <div class="form-group">
+        <div class="form-check">
+          <input type="checkbox" name="remember" class="form-check-input" id="exampleCheck1">
+          <label for="exampleCheck1" class="form-check-label">记住我</label>
+        </div>
       </div>
       <button type="submit" class="btn btn-primary">登录</button>
     </form>
